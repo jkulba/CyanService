@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 using Kulba.Services.CyanService.Models;
@@ -28,10 +29,11 @@ namespace Kulba.Services.CyanService
                         optional: true);
                     configApp.AddEnvironmentVariables(prefix: "PREFIX_");
                     configApp.AddCommandLine(args);
+
                 })
                 .ConfigureServices((hostContext, services) =>
                 {
-                    //services.Configure<AppSettings>(configApp.GetSection("Configuration"));
+                    services.Configure<SocketServerConfigInfo>(hostContext.Configuration.GetSection("SocketServerConfigInfo"));
                     services.AddHostedService<GreetingService>();
                 })
                 .ConfigureLogging((hostContext, configLogging) =>

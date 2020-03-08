@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,17 +14,18 @@ namespace Kulba.Services.CyanService.Services
     public class GreetingService : HostedService
     {
         private readonly ILogger<GreetingService> _logger;
-        private readonly IConfiguration _config;
+        private readonly SocketServerConfigInfo _socketServerConfigInfo;
         private AppSettings appSettings { get; set; }
 
-        public GreetingService(ILogger<GreetingService> logger, IConfiguration config)
+        public GreetingService(ILogger<GreetingService> logger, IOptions<SocketServerConfigInfo> socketServerConfigInfo)
         {
             _logger = logger;
-            _config = config;
+            _socketServerConfigInfo = socketServerConfigInfo?.Value ?? throw new ArgumentNullException(nameof(socketServerConfigInfo));
 
             _logger.LogInformation("Starting Greeting Service");
 
-           
+            _logger.LogInformation("SocketServerConfigInfo: " + _socketServerConfigInfo.ToString());
+
         }
 
         //protected override async Task ExecuteAsync(CancellationToken cancellationToken)
