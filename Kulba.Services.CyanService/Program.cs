@@ -34,7 +34,7 @@ namespace Kulba.Services.CyanService
                 .ConfigureServices((hostContext, services) =>
                 {
                     services.Configure<SocketServerConfigInfo>(hostContext.Configuration.GetSection("SocketServerConfigInfo"));
-                    services.AddHostedService<GreetingService>();
+                    services.AddHostedService<CyanSocketService>();
                 })
                 .ConfigureLogging((hostContext, configLogging) =>
                 {

@@ -15,7 +15,6 @@ namespace Kulba.Services.CyanService.Services
     {
         private readonly ILogger<GreetingService> _logger;
         private readonly SocketServerConfigInfo _socketServerConfigInfo;
-        private AppSettings appSettings { get; set; }
 
         public GreetingService(ILogger<GreetingService> logger, IOptions<SocketServerConfigInfo> socketServerConfigInfo)
         {
