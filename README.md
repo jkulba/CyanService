@@ -1,5 +1,10 @@
 <img src="https://github.com/jkulba/CyanService/blob/master/Cyan-Square.png" alt="Cyan Service" width="75" />
 
+<a href="https://www.qries.com/">
+         <img alt="Qries" src="https://www.qries.com/images/banner_logo.png"
+         width=150" height="70">
+      </a>
+
 # Name of the project
 > Additional information or tagline
 
