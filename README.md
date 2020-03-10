@@ -1,4 +1,5 @@
 ![Logo of the project](<img src="https://github.com/jkulba/CyanService/blob/master/Cyan-Square.png" width="50" height="50">)
+![Logo of the project](https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png)
 
 <img src="https://github.com/jkulba/CyanService/blob/master/Cyan-Square.png" width="75" height="75">
 
