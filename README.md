@@ -2,7 +2,7 @@
 
 ![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png)
 
-<img src="https://github.com/jkulba/CyanService/blob/master/Cyan-Square.png" width="400" height="790">
+<img src="https://github.com/jkulba/CyanService/blob/master/Cyan-Square.png" width="50" height="50">
 
 # Name of the project
 > Additional information or tagline
