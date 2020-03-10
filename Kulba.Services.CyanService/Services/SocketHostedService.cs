@@ -11,12 +11,12 @@ using System.Net.Sockets;
 
 namespace Kulba.Services.CyanService.Services
 {
-    public class CyanSocketService : HostedService
+    public class SocketHostedService : HostedService
     {
-        private readonly ILogger<CyanSocketService> _logger;
+        private readonly ILogger<SocketHostedService> _logger;
         private readonly SocketServerConfigInfo _socketServerConfigInfo;
 
-        public CyanSocketService(ILogger<CyanSocketService> logger, IOptions<SocketServerConfigInfo> socketServerConfigInfo)
+        public SocketHostedService(ILogger<SocketHostedService> logger, IOptions<SocketServerConfigInfo> socketServerConfigInfo)
         {
             _logger = logger;
             _socketServerConfigInfo = socketServerConfigInfo?.Value ?? throw new ArgumentNullException(nameof(socketServerConfigInfo));
