@@ -1,5 +1,7 @@
 ![Logo of the project](https://raw.githubusercontent.com/jkulba/CyanService/master/Cyan-Square.png)
 
+![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png)
+
 # Name of the project
 > Additional information or tagline
 
