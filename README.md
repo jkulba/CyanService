@@ -1,8 +1,6 @@
-![Logo of the project](https://github.com/jkulba/CyanService/blob/master/Cyan-Square.png width="50" height="50")
+![Logo of the project]("https://github.com/jkulba/CyanService/blob/master/Cyan-Square.png" width="50" height="50")
 
 ![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png)
-
-<img src="https://camo.githubusercontent.com/..." data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" height="400" />
 
 # Name of the project
 > Additional information or tagline
