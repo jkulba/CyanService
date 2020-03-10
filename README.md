@@ -1,5 +1,7 @@
 ![Logo of the project](<img src="https://github.com/jkulba/CyanService/blob/master/Cyan-Square.png" width="50" height="50">)
 
+<img src="https://github.com/jkulba/CyanService/blob/master/Cyan-Square.png" width="75" height="75">
+
 # Name of the project
 > Additional information or tagline
 
