@@ -2,7 +2,7 @@
 
 ![Logo of the project](<img src="https://raw.githubusercontent.com/jkulba/CyanService/master/Cyan-Square.png" width="48">)
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png | height = 50px)
 
 # Name of the project
 > Additional information or tagline
