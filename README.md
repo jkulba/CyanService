@@ -1,10 +1,5 @@
 ![Logo of the project](https://raw.githubusercontent.com/jkulba/CyanService/master/Cyan-Square.png)
 
-
-![test image size](https://raw.githubusercontent.com/jkulba/CyanService/master/Cyan-Square.png){:height="50px" width="50px"}
-
-![test image size](/img/post-bg-2015.jpg){:height="700px" width="400px"}
-
 # Name of the project
 > Additional information or tagline
 
