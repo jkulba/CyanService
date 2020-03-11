@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,11 +10,14 @@ namespace Kulba.Services.CyanService.Services
 {
     public abstract class HostedService : IHostedService
     {
-        private Task _executingTask;
-        private CancellationTokenSource _cts;
+        protected Task _executingTask;
+        protected CancellationTokenSource _cts;
 
-        public Task StartAsync(CancellationToken cancellationToken)
+        public virtual Task StartAsync(CancellationToken cancellationToken)
         {
+
+            Console.WriteLine("Base class StartAsync");
+
             // Create a linked token so we can trigger cancellation outside of this token's cancellation
             _cts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
 
@@ -24,8 +28,10 @@ namespace Kulba.Services.CyanService.Services
             return _executingTask.IsCompleted ? _executingTask : Task.CompletedTask;
         }
 
-        public async Task StopAsync(CancellationToken cancellationToken)
+        public virtual async Task StopAsync(CancellationToken cancellationToken)
         {
+            Console.WriteLine("Base class StopAsync");
+
             // Stop called without start
             if (_executingTask == null)
             {
